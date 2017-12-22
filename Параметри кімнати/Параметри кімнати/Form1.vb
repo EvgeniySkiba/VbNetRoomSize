@@ -167,7 +167,7 @@
 
         'загальна площа 
         ' переметр 
-        _perimetr = w * l
+        _perimetr = 2 * (w + l)
         _square = w * l
 
 
