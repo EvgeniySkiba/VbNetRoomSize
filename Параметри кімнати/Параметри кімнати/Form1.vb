@@ -12,11 +12,6 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
         'длина 
         Dim length As String
         ' высота
@@ -183,6 +178,12 @@
         _squareWall = 2 * (h * l + h * w) - _doorSquares - _windowSquares
 
         TextBox12.Text = _squareWall.ToString()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ' The user wants to exit the application. Close everything down.
+        Application.Exit()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
